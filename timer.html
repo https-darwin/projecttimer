@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script>
+     var clicks = 0;
+	
+    function myFunction() {
+        clicks += 1;
+        document.getElementById("demo").innerHTML = clicks;
+		
+    }
+	
+	function myFunction2(){
+		if (clicks > 0){
+		clicks -= 1;
+		document.getElementById("demo").innerHTML = clicks;
+		}
+	}
+    function myFunction3() {
+        clicks += 1;
+        document.getElementById("demo3").innerHTML = clicks;
+		
+    }
+	
+	function myFunction4(){
+		if (clicks > 0){
+		clicks -= 1;
+		document.getElementById("demo3").innerHTML = clicks;
+		}
+	}
+    function myFunction5() {
+        clicks += 1;
+        document.getElementById("demo5").innerHTML = clicks;
+		
+    }
+	
+	function myFunction6(){
+		if (clicks > 0){
+		clicks -= 1;
+		document.getElementById("demo5").innerHTML = clicks;
+		}
+	}
+	
+</script>
+</head>
+<body>
+   <div class="up">
+	<p class="text-center"><span class="glyphicon glyphicon-time"></span><strong>SIMPLE COUNTDOWN</strong><span class="glyphicon glyphicon-time"></span></p>
+	<p class="text-center">
+	        <button type="button" class="btn btn-default btn-sm" onclick="myFunction()">
+          <span class="glyphicon glyphicon-triangle-top"></span>
+        </button>
+	           <button type="button" class="btn btn-default btn-sm" onclick="myFunction3()">
+          <span class="glyphicon glyphicon-triangle-top"></span>
+        </button>
+	           <button type="button" class="btn btn-default btn-sm" onclick="myFunction5()">
+          <span class="glyphicon glyphicon-triangle-top"></span>
+        </button>
+	</p>
+	<p class="text-center">
+		<strong style="color: black;" id="demo">00</strong>
+	    <strong style="color: black;">:</strong>
+	    <strong style="color: black;" id="demo3">00</strong>
+	   <strong style="color: black;">:</strong>
+	   <strong style="color: black;" id="demo5">00</strong>
+	</p>
+		<p class="text-center">
+	        <button type="button" class="btn btn-default btn-sm" onclick="myFunction2()">
+          <span class="glyphicon glyphicon-triangle-bottom"></span>
+        </button>
+	           <button type="button" class="btn btn-default btn-sm" onclick="myFunction4()">
+          <span class="glyphicon glyphicon-triangle-bottom"></span>
+        </button>
+	           <button type="button" class="btn btn-default btn-sm" onclick="myFunction6()">
+          <span class="glyphicon glyphicon-triangle-bottom"></span>
+        </button>
+	</p>
+	   <p class="text-center" style="margin-top: 25px;">
+		   <button>Start</button>
+	   </p>
+	   	   <p class="text-center" style="margin-top: 25px;">
+		   <button>Pause</button>
+	   </p>
+	   	   <p class="text-center" style="margin-top: 25px;">
+		   <button>Reset</button>
+	   </p>
+	</div>
+	
+
+</body>
+</html>

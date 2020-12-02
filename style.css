@@ -1,0 +1,18 @@
+/* CSS Document */
+
+.up {
+	padding-top:15%;
+	padding-bottom:15%;
+	margin-right: auto;
+	margin-left:auto;
+	font-size: 20px;
+}
+
+ .tab { 
+  display: inline-block; 
+  margin-left: 5px; 
+} 
+
+body {
+	background-color: #54C3D0;
+}
